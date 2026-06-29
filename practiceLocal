@@ -1,0 +1,11 @@
+# password locker 
+import sys, pyperclip
+passwords={"email":"qadir@1991","github":"Qadir@1991"}
+if sys.argv<2:
+    print("copy the password")
+account=sys.argv[1]
+if account in passwords:
+    pyperclip.copy(passwords[account])
+    print(account + "copied to the clipboard")
+else:
+    print("There is no account found named: "+ account)
