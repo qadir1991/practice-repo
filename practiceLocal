@@ -1,3 +1,4 @@
+# password locker project
 import sys, pyperclip
 passwords={"email":"qadir@1991","github":"Qadir@1991"}
 if len(sys.argv)<2:
